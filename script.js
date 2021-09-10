@@ -74,14 +74,14 @@ function showWeatherReport(weather) {
     document.body.style.backgroundImage = `url('./assets/image/rainy.jpg')`;
   } else if (weatherType.textContent === 'Clouds') {
     document.body.style.backgroundImage = `url('./assets/image/cloudy.jpg')`;
+  } else {
+    document.body.style.backgroundImage = `url('./assets/image/main2.jpg')`;
   }
 }
 
 function manageDate(todayDate) {
   console.log(todayDate);
   let elm = todayDate.toString().split(' ');
-
   console.log(elm);
-
   return `${elm[2]} ${elm[1]}, ${elm[0]}`;
 }
